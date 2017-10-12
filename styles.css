@@ -1,11 +1,28 @@
-body {
-background: #e0f3fa; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #e0f3fa 0%, #b6dffd 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #e0f3fa 0%,#b6dffd 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #e0f3fa 0%,#b6dffd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+html {
+	height: 100%;
+	background: #e0f3fa; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #e0f3fa 0%, #b6dffd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #e0f3fa 0%,#b6dffd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #e0f3fa 0%,#b6dffd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #firsttitle {
-		font-family: 'Inconsolata', monospace;
+		/*font-family: 'Inconsolata', monospace;*/
+		font-family: 'Amatic SC', cursive;
+		font-weight: bold;
 		color: #CBD1D1;	
+		font-size: 50px;
+		letter-spacing: 8px;
+		animation: moveRight 3s 1;
+}
+@keyframes moveRight { /*fix the way it doesn't go backwards*/
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+  animation-fill-mode: forwards;
 }
