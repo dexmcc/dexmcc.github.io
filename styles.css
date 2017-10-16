@@ -26,11 +26,3 @@ html {  /*background stuff */
 #header:hover {
 	padding-left: 1000px;
 }
-@keyframes moveRight { /*fix the way it doesn't go backwards*/
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100px);
-  }
-}
