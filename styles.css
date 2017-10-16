@@ -1,4 +1,4 @@
-html {
+html {  /*background stuff */
 	height: 100%;
 	background: #e0f3fa; /* Old browsers */
 	background: -moz-linear-gradient(-45deg, #e0f3fa 0%, #b6dffd 100%); /* FF3.6-15 */
@@ -8,14 +8,23 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#firsttitle {
+
+#header { /*first header you see*/
 		/*font-family: 'Inconsolata', monospace;*/
 		font-family: 'Amatic SC', cursive;
 		font-weight: bold;
 		color: #CBD1D1;	
 		font-size: 50px;
 		letter-spacing: 8px;
-		animation: moveRight 3s 1;
+		position: relative;
+		padding-left: 0;
+		transition-property: padding-left;
+		transition-duration: 3s;
+		transition-timing-function; ease;
+		
+}
+#header:hover {
+	padding-left: 1000px;
 }
 @keyframes moveRight { /*fix the way it doesn't go backwards*/
   from {
@@ -24,5 +33,4 @@ html {
   to {
     transform: translateX(100px);
   }
-  animation-fill-mode: forwards;
 }
