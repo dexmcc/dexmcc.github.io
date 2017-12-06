@@ -18,17 +18,34 @@ html {  /*background stuff */
 		position: relative;
 		padding-left: 0;
 		transition-property: padding-left;
-		transition-duration: 3s;2
+		transition-duration: 3s;
 		transition-timing-function: ease;
+		z-index: 0;
 }
-#header:hover {
+#headerAnimation:hover > #header {
 	padding-left: 65%;
 }
+#headerAnimation:hover >#dropMenu {
+	opacity: 1;
+}
+#headerLink:hover {
+	color: white;
+}
 #dropMenu {
-	font-size: 1.875em;
+	font-size: 2.3em;
 	font-family: 'Raleway', sans-serif;
 	color:#C2D1D1;
-	position:relative;
-	opacity:1;
-	padding-bottom: 100;
+	position:absolute;
+	opacity:0;
+	top: 8.7%;
+	transition-property: opacity;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: 0.2s;
+	z-index: 0;
+}
+#headerLink {
+	transition-property:color;
+	transition-duration:0.5s;
+	transition-timing-function: ease;
 }
