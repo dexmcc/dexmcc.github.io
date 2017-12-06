@@ -10,19 +10,25 @@ html {  /*background stuff */
 }
 
 #header { /*first header you see*/
-		/*font-family: 'Inconsolata', monospace;*/
 		font-family: 'Amatic SC', cursive;
 		font-weight: bold;
 		color: #CBD1D1;	
-		font-size: 50px;
-		letter-spacing: 8px;
+		font-size: 3.125em;
+		letter-spacing: 0.3em;
 		position: relative;
 		padding-left: 0;
 		transition-property: padding-left;
-		transition-duration: 3s;
-		transition-timing-function; ease;
-		
+		transition-duration: 3s;2
+		transition-timing-function: ease;
 }
 #header:hover {
-	padding-left: 1000px;
+	padding-left: 65%;
+}
+#dropMenu {
+	font-size: 1.875em;
+	font-family: 'Raleway', sans-serif;
+	color:#C2D1D1;
+	position:relative;
+	opacity:1;
+	padding-bottom: 100;
 }
