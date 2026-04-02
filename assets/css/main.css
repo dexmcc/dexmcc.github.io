@@ -2568,6 +2568,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -2583,7 +2585,7 @@ input, select, textarea {
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
-			margin: 2.5em 1em 1em 2.5em;
+			margin: 2.5em 0 0 2.5em;
 		}
 
 			.tiles article > .image {
