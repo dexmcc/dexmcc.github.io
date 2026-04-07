@@ -3350,11 +3350,19 @@ input, select, textarea {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #333333;
+  background-color: #000000;
   margin:auto;
   padding: 0;
   width: 100%;
   max-width: 1200px;
+  max-height: 900px;
+}
+
+.modal-content img{
+	width: 100%;
+	height: auto;
+	max-height: 45em;
+	object-fit: contain;
 }
 
 /* The Close Button */
