@@ -2328,6 +2328,7 @@ input, select, textarea {
 
 			.image.left img, .image.right img {
 				width: 100%;
+				object-fit: cover;
 			}
 
 		.image.left {
@@ -2708,7 +2709,7 @@ input, select, textarea {
 					}
 
 			.tiles article.mainMenuSelect > .image:before {
-				background-color: #f2849e;
+				background-color: #4c4c4c;
 			}
 
 			.tiles article.style2 > .image:before {
